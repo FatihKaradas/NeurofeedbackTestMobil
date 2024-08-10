@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Dual2Back">
+
+    <!-- 3x3 Grid Layout for N-Back Game -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_marginTop="50dp">
+
+        <!-- Grid Cells -->
+        <ImageView
+            android:id="@+id/squareImageView0"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/kare"
+            android:visibility="visible"/>
+
+        <!-- Repeat for other grid cells from 1 to 8 -->
+        <ImageView
+            android:id="@+id/squareImageView1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/kare"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/squareImageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/kare"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/squareImageView3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/kare"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/squareImageView4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/kare"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/squareImageView5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/kare"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/squareImageView6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/kare"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/squareImageView7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/kare"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/squareImageView8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/kare"
+            android:visibility="visible"/>
+    </GridLayout>
+
+    <!-- Start Game Button -->
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Game"
+        android:layout_below="@+id/gridLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/turquoise"/>
+
+    <!-- Score TextView -->
+    <TextView
+        android:id="@+id/skor"
+        android:textSize="20dp"
+        android:text=""
+        android:layout_below="@+id/StartButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/Dual2Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dual2Back"
+        android:textSize="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dualtext"
+        android:text="Try to know the action two steps ago by clicking "
+        android:textColor="@color/turquoise"
+        android:textSize="17dp"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dualtext2"
+        android:text="on the squares in the 10-step game. "
+        android:textColor="@color/turquoise"
+        android:textSize="17dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
